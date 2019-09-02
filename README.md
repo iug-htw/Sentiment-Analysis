@@ -11,34 +11,20 @@ For more information on our research group, please go to https://iug.htw-berlin.
 Content of the Repository
 -------------------------
 
-We compiled a test corpus with typical German job reference letter sentences from German books on how to write job reference letters. We combined those template sentences with subjects of varying gender, origin and nobility.
-To find suitable surnames for our experiment, we looked up the lists of members of the German state parliaments. Then we mapped the names to their origins and randomly picked ten German surnames, ten German surnames with nobiliary
-particle and ten Turkish surnames. Following a literature review, we collected 843 different sentences that are commonly used in German job references.To compile the German Job Reference Corpus, we combined each template sentence with each of the 30 different surnames and both gender specific titles. This yields 60 distinct sentences originating from the same template. Additionally,
-we altered each template sentence by replacing the title and surname with the corresponding male or female pronoun, thus adding another two sentences per template to the corpus.
+German Job Reference Corpus: 
+We compiled a test corpus of 843 typical German job reference letter sentences from German books on how to write job reference letters. We combined those template sentences with subjects of varying gender, origin and nobility. To create the German Job Reference Corpus, we combined each template sentence with each of the 30 different surnames and both gender specific titles. This yields 60 distinct sentences originating from the same template. Additionally, we altered each template sentence by replacing the title and surname with the corresponding male or female pronoun, thus adding another two sentences per template to the corpus.
 Eventually, the corpus consists of 52,266 sentences in total, out of which 1,686 sentences are formed with a pronoun instead of a name.
 
+Sentiment Analysis: 
+We have tested the sentiment of all sentences in the corpus using 4 standard, commercially available sentiment analysis APIs: 
+Google: https://cloud.google.com/natural-language/
+AWS: https://aws.amazon.com/comprehend
+IBM: https://www.ibm.com/watson/services/natural-language-understanding/
+Azure: https://azure.microsoft.com/en-en/services/cognitive-services/
 
+The sentiments collected from each service in July 2019 are available in /results. 
 
-Literature
-----------
-
-The literature from which we took the sentences which we then transformed into template sentences are:
-
-* H.-G. Dachrodt and V. Engelbert, _Zeugnisse richtig formulieren: Mit
-vielen Mustern und Analysen_. Wiesbaden: Springer Gabler, 2013.
-
-* G. Huber and W. Müller, _Das Arbeitszeugnis in Recht und Praxis:
-Rechtliche Grundlagen, Textbausteine, Musterzeugnisse, Zeugnisanalysen_,
-16th ed. Haufe-Lexware GmbH & Co. KG, 2016.
-
-* S. Schustereit and J. Welscher, _Arbeitszeugnisse für den öffentlichen
-Dienst_, 2nd ed. München: Haufe-Lexware GmbH & Co. KG, 2013.
-
-* T. Knobbe, M. Leis, and K. Umnuß, _Arbeitszeugnisse für
-Führungskräfte_, 5th ed. Freiburg, Br.: Haufe, 2010.
-
-* T. Knobbe, M. Leis, and K. Umnuß, _Arbeitszeugnisse: Textbausteine und Tätigkeitsbeschreibungen_,
-6th ed. München: Haufe-Lexware GmbH & Co. KG, 2011.
+The scripts used to analyse those sentiment scores are available as python scripts. 
 
 
 Project
